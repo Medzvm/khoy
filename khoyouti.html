@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Khoyouti | Crochet boxes, preorder now</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#D98F8A;--blush:#E8AAA3;--deep:#B96F6B;--gold:#B8734E;--champ:#D79A69;--ivory:#FAF7F2;--taupe:#8A655C;--ink:#5a3f39;--mist:#F6E7E2;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;background:var(--ivory)}
+body{margin:0;background:radial-gradient(circle at 90% 0,#f6dcd6 0,transparent 38%),radial-gradient(circle at 0 45%,#f8e9e2 0,transparent 35%),var(--ivory);color:var(--ink);font:16px/1.65 'DM Sans',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;margin:0;color:var(--deep)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-family:'Fraunces',Georgia,serif;font-size:30px;color:var(--deep);font-weight:600;display:flex;align-items:center;gap:8px}
+.btn{display:inline-block;border:0;border-radius:999px;background:linear-gradient(135deg,var(--rose),var(--deep));color:#fff;padding:15px 32px;font:700 16px 'DM Sans',sans-serif;cursor:pointer;text-decoration:none;box-shadow:0 8px 22px -8px var(--deep);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.ghost{background:none;color:var(--deep);box-shadow:none;border:2px solid var(--rose);padding:11px 24px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding:28px 0 70px}
+.badge{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px dashed var(--rose);color:var(--taupe);border-radius:999px;padding:6px 16px;font-size:14px;font-weight:500;margin-bottom:20px}
+.hero h1{font-size:clamp(40px,7vw,68px);letter-spacing:-.5px}
+.hero h1 em{font-weight:400;color:var(--gold)}
+.hero p{font-size:19px;color:var(--taupe);max-width:30em;margin:20px 0 30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.art{position:relative}.art svg{width:100%;height:auto;display:block}
+.blob{position:absolute;inset:6% 4%;background:var(--mist);border-radius:58% 42% 55% 45%/48% 55% 45% 52%;z-index:0}
+.art svg{position:relative;z-index:1}
+.thread{stroke-dasharray:1200;stroke-dashoffset:1200;animation:draw 3.5s ease forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.thread{animation:none;stroke-dashoffset:0}}
+.stitch{height:0;border-top:3px dashed var(--blush);opacity:.7;margin:0}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:38px 0}
+.vals div{text-align:center;color:var(--taupe);font-size:15px}.vals b{display:block;font-family:'Fraunces',serif;font-size:20px;color:var(--deep);margin-bottom:2px}
+section{padding:46px 0}
+.head{margin-bottom:26px}.head h2{font-size:clamp(28px,4.5vw,40px)}.head p{color:var(--taupe);margin:8px 0 0}
+.step{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--deep);color:#fff;font:600 17px 'Fraunces',serif;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.opt{position:relative;text-align:left;background:#fff;border:2px dashed var(--blush);border-radius:26px;padding:14px 14px 22px;color:var(--ink);transition:transform .2s,box-shadow .2s}
+.opt:hover{transform:translateY(-4px);box-shadow:0 18px 30px -20px var(--deep)}
+.opt.on{border:2px solid var(--deep);box-shadow:0 0 0 5px var(--mist),0 18px 30px -18px var(--deep)}
+.opt .pic{background:var(--mist);border-radius:18px;margin-bottom:14px}.opt .pic svg{width:100%;height:auto;display:block}
+.opt h3,.opt .pr,.opt ul{margin-left:8px;margin-right:8px}
+.opt h3{font-size:23px}.opt .pr{font-weight:700;color:var(--gold);font-size:19px;margin-top:2px}
+.opt ul{margin-top:10px;margin-bottom:0;padding-left:20px;color:var(--taupe);font-size:15px}
+.tag{position:absolute;top:24px;left:24px;background:var(--gold);color:#fff;border-radius:999px;font-size:12px;font-weight:700;padding:3px 12px;z-index:2}
+.chk{position:absolute;top:24px;right:24px;width:28px;height:28px;border-radius:50%;background:var(--deep);color:#fff;display:none;place-items:center;font-weight:700;z-index:2}
+.opt[aria-pressed=true] .chk{display:grid}
+.sw{display:flex;gap:12px;flex-wrap:wrap}
+.sw button{display:flex;align-items:center;gap:10px;background:#fff;border:2px solid #f0dfd8;border-radius:999px;padding:8px 20px 8px 8px;cursor:pointer;color:var(--ink);font:500 15px 'DM Sans',sans-serif}
+.sw button[aria-pressed=true]{border-color:var(--deep);box-shadow:0 0 0 4px var(--mist)}
+.sw i{width:32px;height:32px;border-radius:50%;display:block;box-shadow:inset -4px -4px 8px rgba(0,0,0,.12)}
+.panel{background:#fff;border-radius:30px;padding:30px;box-shadow:0 30px 50px -40px var(--deep);border:1px solid #f3e4de}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form label{display:grid;gap:5px;font-weight:500;font-size:15px}.form .full{grid-column:1/-1}
+input,select,textarea{font:16px 'DM Sans',sans-serif;padding:13px 15px;border-radius:14px;border:2px solid #f0dfd8;background:var(--ivory);color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--rose);outline:none}
+.qty{display:flex;align-items:center;gap:14px;height:50px}.qty button{width:42px;height:42px;border-radius:50%;border:2px solid var(--deep);background:none;color:var(--deep);font-size:22px;cursor:pointer}
+.sum{background:var(--mist);border-radius:20px;padding:20px 22px;margin-top:22px}
+.sum div{display:flex;justify-content:space-between;padding:3px 0}.sum .t{font:600 24px 'Fraunces',serif;color:var(--deep);border-top:2px dashed var(--blush);margin-top:10px;padding-top:12px}
+.err{color:#b3261e;font-size:14px;min-height:22px;margin:10px 0 0}
+.note{font-size:14px;color:var(--taupe);margin:12px 0 0}
+.bar{position:sticky;bottom:0;background:rgba(250,247,242,.94);backdrop-filter:blur(8px);border-top:1px solid #f0dfd8;padding:10px 22px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;gap:12px;z-index:5}
+.bar span{font-weight:700;color:var(--deep)}.bar .btn{padding:11px 24px}
+footer{text-align:center;color:var(--taupe);padding:40px 20px 30px;font-size:14px}footer b{font-family:'Fraunces',serif;font-size:24px;color:var(--deep);display:block}
+.add{margin:16px 8px 0}.add .btn{padding:11px 24px}.qty b{min-width:24px;text-align:center}.tw{overflow-x:auto;margin-top:16px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:8px 10px;border-bottom:1px solid #f0dfd8;text-align:left;white-space:nowrap}th{color:var(--deep)}.st{background:var(--mist);border-radius:999px;padding:2px 12px;font-weight:700;color:var(--deep)}.ok{text-align:center;padding:10px 0}.ok h2{margin-bottom:10px}.ok .id{font:600 34px Fraunces,serif;color:var(--gold);margin:8px 0}#tout{margin-top:14px}
+@media(max-width:760px){.hero,.grid,.vals,.form{grid-template-columns:1fr}.art{max-width:360px;margin:0 auto}.panel{padding:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="14" cy="16" r="11" fill="#D98F8A"/><path d="M6 13c6 4 12 4 17 0M5 19c7 4 14 4 19 0" stroke="#B96F6B" stroke-width="2" fill="none"/><rect x="14" y="5" width="15" height="3" rx="1.5" fill="#B8734E" transform="rotate(35 14 5)"/></svg>khoyouti</div><a class="btn ghost" href="#order">Preorder</a></header>
+
+<div class="hero">
+ <div>
+  <span class="badge">🌸 Preorders open in Qatar</span>
+  <h1>Soft yarn, a golden hook, <em>your first stitch.</em></h1>
+  <p>Khoyouti means “my threads”. Every crochet box arrives ready to start, with yarn, a rose gold hook and an easy pattern.</p>
+  <div class="cta"><a class="btn" href="#order">Choose your box</a></div>
+ </div>
+ <div class="art"><div class="blob"></div>
+ <svg viewBox="0 0 360 340" role="img" aria-label="A ball of rose yarn with a gold crochet hook">
+  <defs><radialGradient id="g" cx=".35" cy=".3"><stop offset="0" stop-color="#E8AAA3"/><stop offset=".6" stop-color="#D98F8A"/><stop offset="1" stop-color="#B96F6B"/></radialGradient>
+  <linearGradient id="h" x1="0" x2="1"><stop offset="0" stop-color="#D79A69"/><stop offset=".5" stop-color="#B8734E"/><stop offset="1" stop-color="#D79A69"/></linearGradient></defs>
+  <circle cx="165" cy="185" r="112" fill="url(#g)"/>
+  <g fill="none" stroke="#B96F6B" stroke-width="4" stroke-linecap="round" opacity=".75"><path d="M72 150c60 40 130 40 190 0"/><path d="M58 195c65 42 140 42 205 0"/><path d="M85 112c50 28 110 28 160 0"/><path d="M100 250c40 20 90 20 125 0"/><path d="M110 85c20 40 25 110 0 170"/><path d="M165 75c-15 50-15 120 0 220"/><path d="M225 90c-22 50-22 110 0 165"/></g>
+  <path d="M95 110c35-45 90-60 125-30" stroke="#fff" stroke-opacity=".5" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path class="thread" d="M240 235C300 260 310 310 250 322S110 330 20 300" stroke="#E8AAA3" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <g transform="rotate(34 250 100)"><rect x="150" y="92" width="200" height="16" rx="8" fill="url(#h)"/><rect x="175" y="96" width="140" height="4" rx="2" fill="#F0C79A"/><path d="M150 92c-16 0-24 8-17 15 5 5 12 1 17-4z" fill="#B8734E"/></g>
+  <g fill="#D79A69"><circle cx="320" cy="60" r="5"/><circle cx="40" cy="70" r="4"/><circle cx="335" cy="200" r="3"/></g>
+ </svg></div>
+</div>
+<div class="stitch"></div>
+<div class="vals"><div><b>Beginner friendly</b>Simple patterns that guide you</div><div><b>Beautifully packed</b>Ready to gift or keep</div><div><b>Delivered in Qatar</b>Confirmed on WhatsApp</div></div>
+<div class="stitch"></div>
+
+<section id="order">
+ <div class="head"><span class="step">1</span><h2>Choose your box</h2><p>Add as many boxes as you like.</p></div>
+ <div class="grid" id="boxes"></div>
+</section>
+
+<section id="checkout">
+ <div class="head"><span class="step">2</span><h2>Your details</h2><p>Used only to prepare and deliver your order.</p></div>
+ <div class="panel" id="panel">
+ <div class="form">
+  <label>Full name<input id="name" autocomplete="name"></label>
+  <label>Phone number<input id="phone" inputmode="tel" autocomplete="tel" placeholder="+974 ..."></label>
+  <label>Delivery area<select id="area"><option value="">Select area</option><option>Doha</option><option>Lusail</option><option>Al Wakrah</option><option>Al Khor</option><option>Al Rayyan</option><option>Umm Salal</option><option>Other</option></select></label>
+  <label class="full">Gift note (optional)<textarea id="note" rows="2" placeholder="Add a short message"></textarea></label>
+ </div>
+ <div class="sum" aria-live="polite" id="sum"></div>
+ <p class="err" id="err" role="alert"></p>
+ <button class="btn" id="send">Place preorder</button>
+ <p class="note">Nothing is charged online. We contact you on WhatsApp to confirm your order and delivery date.</p>
+ </div>
+</section>
+<section id="track">
+ <div class="head"><h2>Track your order</h2><p>Enter the order number you received and your phone number.</p></div>
+ <div class="panel"><div class="form"><label>Order number<input id="tid" placeholder="KH-XXXXX"></label><label>Phone number<input id="tph" inputmode="tel"></label></div>
+ <p class="err" id="terr" role="alert"></p><button class="btn ghost" id="tbtn">Check status</button><div id="tout"></div></div>
+</section>
+<section id="admin" hidden>
+ <div class="head"><h2>Orders</h2><p>Live from your Google Sheet.</p></div>
+ <div class="panel"><div class="form"><label>Admin key<input id="akey" type="password"></label></div><p class="err" id="aerr" role="alert"></p><button class="btn ghost" id="abtn">Load orders</button><div class="tw" id="aout"></div></div>
+</section>
+</div>
+
+<div class="bar"><span id="barTxt">Add a box to begin</span><a class="btn" href="#order" id="barBtn">Choose</a></div>
+<footer><b>khoyouti</b>Handmade with love in Qatar</footer>
+
+<script>
+// SETTINGS: paste your Google Apps Script web app URL below (see setup steps). Empty = demo mode (orders saved only in this browser).
+var CONFIG={SHEET_URL:"",WHATSAPP:"97400000000"};
+var BOXES=[
+ {id:"starter",name:"Starter Box",price:129,tag:"",n:2,items:["2 yarn skeins","Rose gold hook","Beginner pattern card"]},
+ {id:"cozy",name:"Cozy Box",price:189,tag:"Most loved",n:3,items:["4 yarn skeins","Hook + stitch markers","Pattern card + video guide"]},
+ {id:"gift",name:"Gift Box",price:249,tag:"Gift ready",n:4,items:["5 yarn skeins","Hook, scissors, markers","Gift wrap + handwritten note"]}];
+var C={starter:0,cozy:0,gift:0},$=function(i){return document.getElementById(i)};
+function art(n){var pos=[[80,92,34,"#D98F8A"],[140,98,30,"#E8AAA3"],[110,70,28,"#B96F6B"],[165,76,24,"#D98F8A"]],s="";
+ for(var i=0;i<n;i++){var p=pos[i];s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+p[2]+'" fill="'+p[3]+'"/><path d="M'+(p[0]-p[2]+6)+' '+p[1]+'q'+(p[2]-6)+' 14 '+(2*p[2]-12)+' 0" stroke="#fff" stroke-opacity=".5" stroke-width="3" fill="none"/>'}
+ return '<svg viewBox="0 0 240 170" aria-hidden="true">'+s+'<rect x="30" y="100" width="180" height="56" rx="10" fill="#FAF7F2" stroke="#D98F8A" stroke-width="3"/><path d="M30 118h180" stroke="#E8AAA3" stroke-width="3" stroke-dasharray="6 5"/><rect x="104" y="100" width="32" height="56" fill="#D79A69"/><rect x="150" y="30" width="70" height="7" rx="3.5" fill="#B8734E" transform="rotate(-28 150 30)"/></svg>'}
+function renderBoxes(){$("boxes").innerHTML=BOXES.map(function(b){var c=C[b.id];return '<div class="opt'+(c?' on':'')+'">'+(b.tag?'<span class="tag">'+b.tag+'</span>':'')+'<div class="pic">'+art(b.n)+'</div><h3>'+b.name+'</h3><div class="pr">'+b.price+' QAR</div><ul>'+b.items.map(function(i){return'<li>'+i+'</li>'}).join("")+'</ul><div class="add">'+(c?'<div class="qty"><button type="button" data-m="'+b.id+'" aria-label="Remove one">−</button><b>'+c+'</b><button type="button" data-p="'+b.id+'" aria-label="Add one">+</button></div>':'<button type="button" class="btn" data-p="'+b.id+'">Add to order</button>')+'</div></div>'}).join("")}
+function lines(){return BOXES.filter(function(b){return C[b.id]>0})}
+function total(){return lines().reduce(function(t,b){return t+b.price*C[b.id]},0)}
+function count(){return lines().reduce(function(t,b){return t+C[b.id]},0)}
+function items(){return lines().map(function(b){return b.name+" x"+C[b.id]}).join(", ")}
+function update(){var L=lines();
+ if(!L.length){$("sum").innerHTML='<div>Add a box in step 1 to see your total.</div>';$("barTxt").textContent="Add a box to begin";$("barBtn").textContent="Choose";$("barBtn").href="#order";return}
+ $("sum").innerHTML=L.map(function(b){return'<div><span>'+b.name+' × '+C[b.id]+'</span><span>'+b.price*C[b.id]+' QAR</span></div>'}).join("")+'<div><span>Delivery</span><span>Confirmed on WhatsApp</span></div><div class="t"><span>Total</span><span>'+total()+' QAR</span></div>';
+ $("barTxt").textContent=count()+(count()>1?' boxes':' box')+' · '+total()+' QAR';$("barBtn").textContent="Checkout";$("barBtn").href="#checkout"}
+$("boxes").onclick=function(e){var b=e.target.closest("button");if(!b)return;var p=b.dataset.p,m=b.dataset.m;if(p&&C[p]<20)C[p]++;if(m&&C[m]>0)C[m]--;renderBoxes();update()};
+function store(){try{return JSON.parse(localStorage.getItem("kh")||"[]")}catch(e){return[]}}
+function d8(s){return String(s).replace(/\D/g,"").slice(-8)}
+async function getOrders(q){if(CONFIG.SHEET_URL){var r=await fetch(CONFIG.SHEET_URL+"?"+new URLSearchParams(q));return (await r.json()).orders||[]}return store()}
+$("send").onclick=async function(){var n=$("name").value.trim(),p=$("phone").value.trim(),a=$("area").value;
+ var m=!lines().length?"Add a box in step 1.":!n?"Enter your name.":p.replace(/\D/g,"").length<8?"Enter a valid phone number.":!a?"Select your delivery area.":"";
+ $("err").textContent=m;if(m)return;
+ var o={id:"KH-"+Math.random().toString(36).slice(2,7).toUpperCase(),time:new Date().toISOString(),name:n,phone:p,area:a,note:$("note").value.trim(),items:items(),total:total(),status:"New"};
+ $("send").disabled=true;$("send").textContent="Sending...";
+ try{if(CONFIG.SHEET_URL)await fetch(CONFIG.SHEET_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(o)});
+  try{var l=store();l.unshift(o);localStorage.setItem("kh",JSON.stringify(l))}catch(e){}
+ }catch(e){$("err").textContent="Could not send your order. Check your connection and try again.";$("send").disabled=false;$("send").textContent="Place preorder";return}
+ var wa="https://wa.me/"+CONFIG.WHATSAPP+"?text="+encodeURIComponent("Hello khoyouti! My preorder "+o.id+":\n"+o.items+"\nTotal: "+o.total+" QAR");
+ $("panel").innerHTML='<div class="ok"><h2>Thank you, '+n.replace(/[<>&]/g,"")+'!</h2><p>Your preorder is received. Your order number is</p><div class="id">'+o.id+'</div><p>Total: '+o.total+' QAR. Save this number to track your order below.</p><a class="btn" target="_blank" rel="noopener" href="'+wa+'">Confirm on WhatsApp</a></div>';
+ $("sum").id="";C={starter:0,cozy:0,gift:0};renderBoxes();$("barTxt").textContent="Order placed";$("barBtn").textContent="Track";$("barBtn").href="#track"};
+$("tbtn").onclick=async function(){var id=$("tid").value.trim().toUpperCase(),ph=$("tph").value;$("terr").textContent="";$("tout").innerHTML="";
+ if(!id||d8(ph).length<8){$("terr").textContent="Enter your order number and phone number.";return}
+ try{var r=(await getOrders({action:"track",id:id,phone:ph})).filter(function(o){return o.id==id&&(o.phone==null||d8(o.phone)==d8(ph))});
+  $("tout").innerHTML=r.length?'<p><b>'+r[0].id+'</b> · '+r[0].items+' · '+r[0].total+' QAR<br>Status: <span class="st">'+r[0].status+'</span></p>':'<p>No order found. Check the number and phone, then try again.</p>'}
+ catch(e){$("terr").textContent="Could not load your order. Try again in a moment."}};
+if(location.hash=="#admin"){$("admin").hidden=false}
+$("abtn").onclick=async function(){$("aerr").textContent="";try{var r=await getOrders({action:"list",key:$("akey").value});
+ $("aout").innerHTML=r.length?'<table><tr><th>ID</th><th>Name</th><th>Phone</th><th>Area</th><th>Items</th><th>Total</th><th>Status</th></tr>'+r.map(function(o){var e=function(s){return String(s==null?"":s).replace(/[<>&]/g,"")};return'<tr><td>'+e(o.id)+'</td><td>'+e(o.name)+'</td><td>'+e(o.phone)+'</td><td>'+e(o.area)+'</td><td>'+e(o.items)+'</td><td>'+e(o.total)+'</td><td><span class="st">'+e(o.status)+'</span></td></tr>'}).join("")+'</table>':'<p>No orders yet, or the admin key is wrong.</p>'}
+ catch(e){$("aerr").textContent="Could not load orders."}};
+renderBoxes();update();
+</script>
+</body>
+</html>
